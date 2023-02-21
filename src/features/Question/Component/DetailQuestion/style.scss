@@ -1,0 +1,26 @@
+.DetailQuestion {
+    &_Avatar {
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+    }
+    &_Item{
+        transition: all ease 0.1s;
+        &:hover{
+            transform: translateY(-1px);
+          }
+      }
+    .wmde-markdown {
+        display: grid;
+        width: auto;
+        min-width: 0px;
+        img {
+            margin: 1rem 0;
+        }
+        code {
+            margin-top: 0;
+            overflow: auto;
+            max-height: 600px;
+        }
+    }
+}

@@ -1,0 +1,464 @@
+//======= Screen1 ==========
+.Screen1 {
+    h1 {
+        font-size: 4rem;
+        font-weight: 750;
+        color: #183b56;
+    }
+    p {
+        font-size: 1.25rem;
+        color: #5a7184;
+    }
+    button {
+        font-size: 1.25rem;
+        width: fit-content;
+        padding: 15px 30px;
+        margin-top: 2rem;
+    }
+    i {
+        color: #04cb00;
+        margin-right: 0.5rem;
+    }
+}
+
+//======= Screen2 ==========
+.Screen2 {
+    h1 {
+        font-size: 3rem;
+        color: #183b56;
+        font-weight: 800;
+    }
+    p {
+        font-size: 1.25rem;
+        color: #5a7184;
+    }
+    .IconWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0px 26px 40px rgba(0, 0, 0, 0.1);
+    }
+    .ImgScreen2 {
+        position: absolute;
+        top: -28%;
+        left: 25%;
+        width: 50%;
+        z-index: 1;
+        border-radius: 2rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+//======= Screen3 ==========
+.Screen3 {
+    h1 {
+        font-size: 4rem;
+        font-weight: 750;
+        color: #183b56;
+    }
+    p {
+        font-size: 1.25rem;
+        color: #5a7184;
+    }
+    .Screen3-percent {
+        h2 {
+            font-size: 3rem;
+            font-weight: 750;
+            color: #183b56;
+        }
+        div {
+            background-color: #fff5de;
+            font-size: 1.25rem;
+            border-radius: 1.5rem;
+            color: #5a7184;
+        }
+    }
+}
+
+//======= Screen4 ==========
+.Screen4 {
+    .ImgScreen4Wrapper {
+        width: fit-content;
+        .ImgScreen4 {
+            width: 50rem;
+            border-radius: 2rem;
+            margin: 0 auto;
+            filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
+        }
+    }
+    .Screen4Infor {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e3f1fe;
+        height: 15rem;
+        width: 15rem;
+        border-radius: 3rem;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+        i {
+            margin-bottom: 1rem;
+            color: #0fa958;
+            font-size: 2.8rem;
+        }
+        p {
+            font-size: 1.25rem;
+            margin: 1rem;
+        }
+    }
+}
+
+//======= Screen5 ==========
+.Screen5 {
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #183b56;
+    }
+    span {
+        font-weight: 600;
+        font-size: 1.4rem;
+        letter-spacing: 0.2px;
+        color: #183b56;
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+    .SlideText1,
+    .SlideText2 {
+        clear: both;
+        height: 0px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #5a7184;
+        margin-left: 2rem;
+        overflow: hidden;
+        text-align: start;
+        transition: all 0.5s ease;
+    }
+    .ArrowDown1,
+    .ArrowUp1,
+    .ArrowDown2,
+    .ArrowUp2 {
+        cursor: pointer;
+        color: #00b8d9;
+    }
+
+    #LabelDrop1 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        border: 1px solid #eceef2;
+        border-radius: 12px;
+        transition: all 0.5s ease;
+        .ArrowUp1 {
+            display: none;
+        }
+        &:hover {
+            background-color: #f6fbff;
+            .ArrowDown1 {
+                display: none;
+            }
+            .ArrowUp1 {
+                display: block;
+            }
+        }
+    }
+
+    #LabelDrop2 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        border: 1px solid #eceef2;
+        border-radius: 12px;
+        transition: all 0.5s ease;
+        .ArrowUp2 {
+            display: none;
+        }
+        &:hover {
+            background-color: #f6fbff;
+            .ArrowDown2 {
+                display: none;
+            }
+            .ArrowUp2 {
+                display: block;
+            }
+        }
+    }
+
+    #touch1,
+    #touch2 {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    #touch1:hover ~ .SlideText1,
+    #touch1:checked ~ .SlideText1 {
+        height: 70px;
+    }
+    #touch1:checked ~ #LabelDrop1 {
+        background-color: #f6fbff;
+        .ArrowDown1 {
+            display: none;
+        }
+        .ArrowUp1 {
+            display: block;
+        }
+    }
+    #touch2:hover ~ .SlideText2,
+    #touch2:checked ~ .SlideText2 {
+        height: 60px;
+    }
+    #touch2:checked ~ #LabelDrop2 {
+        background-color: #f6fbff;
+        .ArrowDown2 {
+            display: none;
+        }
+        .ArrowUp2 {
+            display: block;
+        }
+    }
+}
+
+//======= Screen6 ==========
+.Screen6 {
+    .ItemScreen6 {
+        background-color: #fbfbfb;
+        padding: 2rem 0;
+        border-radius: 2rem;
+        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+    }
+    img {
+        width: 10rem;
+        margin: 0 4.8rem;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #183b56;
+        margin: 2rem 0 1.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+        color: #5a7184;
+    }
+}
+
+//======= Screen7 ==========
+.Screen7 {
+    h1 {
+        color: #183b56;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+    p {
+        font-size: 1.25rem;
+        color: #5a7184;
+    }
+    span {
+        color: #183b56;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+}
+
+//======= Screen9 ==========
+.Screen9 {
+    .BoxScreen9 {
+        width: 39rem;
+        height: 23rem;
+        border-radius: 2rem;
+        box-shadow: 0px 6px 6px 3px rgba(0, 0, 0, 0.25);
+        h1{
+            font-size: 1.75rem;
+        }
+        p{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .Screen1 {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    .Screen3 {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        .Screen3-percent {
+            h2 {
+                font-size: 2.5rem;
+            }
+            div {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .Screen4 {
+        .ImgScreen4Wrapper {
+            width: 75%;
+            .ImgScreen4 {
+                width: 100%;
+            }
+        }
+        .Screen4Infor {
+            height: 12rem;
+            width: 12rem;
+            border-radius: 2.5rem;
+            i {
+                margin-bottom: 0.75rem;
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+                margin: 0.75rem;
+            }
+        }
+    }
+    .Screen5 {
+        h1 {
+            font-size: 2.5rem;
+        }
+        span {
+            font-size: 1.2rem;
+        }
+        .SlideText1,
+        .SlideText2 {
+            font-size: 13px;
+            line-height: 24px;
+            margin-left: 2rem;
+        }
+    }
+    .Screen6 {
+        img {
+            width: 8.5rem;
+            margin: 0 4rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Screen1 {
+        h1 {
+            font-size: 2.8rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            text-align: center;
+        }
+        button {
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin-top: 1rem;
+        }
+    }
+    .Screen2 {
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        .ImgScreen2 {
+            position: static;
+            width: 100%;
+        }
+        .IconWrapper {
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
+    }
+    .Screen4 {
+        .Screen4Infor {
+            position: static;
+            height: 10rem;
+            width: 10rem;
+            border-radius: 2rem;
+            i {
+                margin-bottom: 0.75rem;
+                font-size: 2rem;
+            }
+            p {
+                font-size: 0.75rem;
+                margin: 0.5rem 1rem;
+            }
+        }
+    }
+    .Screen5 {
+        #touch1:hover ~ .SlideText1,
+        #touch1:checked ~ .SlideText1 {
+            height: 50px;
+        }
+    }
+    .Screen6 {
+        .ItemScreen6 {
+            padding: 1.5rem 0;
+            border-radius: 1.5rem;
+        }
+        img {
+            width: 7.5rem;
+            margin: 0 3rem;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin: 1.2rem 0 1rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+    .Screen7 {
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        span {
+            font-size: 1rem;
+            line-height: 1.6rem;
+        }
+    }
+    .Screen8 {
+        img {
+            width: 10rem;
+        }
+    }
+    .Screen9 {
+        .BoxScreen9 {
+            width: 35rem;
+            height: 20rem;
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

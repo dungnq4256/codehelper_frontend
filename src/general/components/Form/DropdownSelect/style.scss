@@ -1,0 +1,12 @@
+.DropdownSelect {
+    .btn.btn-outline-secondary:hover:not(.btn-text):not(:disabled):not(
+            .disabled
+        ),
+    .btn.btn-outline-secondary:focus:not(.btn-text),
+    .btn.btn-outline-secondary.focus:not(.btn-text) {
+        // background-color: transparent !important;
+    }
+    .btn.btn-outline-secondary {
+        background-color: white !important;
+    }
+}

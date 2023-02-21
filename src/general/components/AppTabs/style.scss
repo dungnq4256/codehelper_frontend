@@ -1,0 +1,10 @@
+.AppTabs {
+    .active {
+        color: #313C59 !important;
+        background-color: #fff !important;
+        border: none;
+    }
+    .nav .show > .nav-link, .nav .nav-link:hover:not(.disabled), .nav .nav-link.active{
+        color: #313C59 !important;
+    }
+}

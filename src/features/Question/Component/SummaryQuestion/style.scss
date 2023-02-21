@@ -1,0 +1,20 @@
+.SummaryQuestion{
+    .header-avatar {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+  }
+  &_Title {
+    transition: all ease 0.2s;
+      &:hover{
+        color: rgb(233, 97, 0);
+      }
+  }
+  &_Item{
+    transition: all ease 0.1s;
+    &:hover{
+        transform: translateY(-1px);
+      }
+  }
+
+}

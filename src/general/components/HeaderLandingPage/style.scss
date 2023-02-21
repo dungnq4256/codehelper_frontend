@@ -1,0 +1,309 @@
+.HeaderLandingPage {
+    .HeaderLandingPageNav {
+        .HeaderLandingPageNavItem {
+            cursor: pointer;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-right: 1.3rem;
+
+            &:hover {
+                color: #f48023;
+            }
+        }
+    }
+
+    .bell {
+        position: relative;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+
+    .bell i {
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .bell div {
+        height: 13px;
+        width: 13px;
+        position: absolute;
+        background-color: #0d6efd;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        top: 0%;
+        right: -10%;
+    }
+
+    .header-avatar {
+        height: 45px;
+        width: 45px;
+        object-fit: cover;
+        border: 0.5px solid rgb(221, 221, 221);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .header-sm-avatar {
+        height: 8rem;
+        width: 8rem;
+        object-fit: cover;
+        border: 0.5px solid rgb(221, 221, 221);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .show-option {
+        height: fit-content;
+        margin: auto 0;
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        transition: ease-out 0.3s;
+
+        &:hover {
+            background-color: rgb(223, 223, 223);
+        }
+    }
+
+    @keyframes bugfix {
+        from {
+            padding: 0;
+        }
+
+        to {
+            padding: 0;
+        }
+    }
+
+    @-webkit-keyframes bugfix {
+        from {
+            padding: 0;
+        }
+
+        to {
+            padding: 0;
+        }
+    }
+
+    #overlay-button {
+        padding: 1rem 0.5rem;
+        margin-bottom: 0.4rem;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+
+        span {
+            height: 0.2rem;
+            width: 2rem;
+            border-radius: 2px;
+            background-color: #b5b5c3;
+            position: relative;
+            display: block;
+            transition: all 0.2s ease-in-out;
+
+            &:before {
+                top: -10px;
+                visibility: visible;
+            }
+
+            &:after {
+                top: 10px;
+            }
+
+            &:before,
+            &:after {
+                height: 0.2rem;
+                width: 2rem;
+                border-radius: 2px;
+                background-color: #b5b5c3;
+                position: absolute;
+                content: "";
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        &:hover span,
+        &:hover span:before,
+        &:hover span:after {
+            background: #fd7e14;
+        }
+    }
+
+    input[type="checkbox"] {
+        display: none;
+
+        &:checked~#overlay {
+            visibility: visible;
+        }
+
+        &:checked~#overlay-button {
+
+            &:hover span,
+            span {
+                background: transparent;
+            }
+
+            span {
+                &:before {
+                    transform: rotate(45deg) translate(7px, 7px);
+                    opacity: 1;
+                }
+
+                &:after {
+                    transform: rotate(-45deg) translate(7px, -7px);
+                }
+            }
+        }
+    }
+
+    #overlay {
+        position: absolute;
+        top: 4.7rem;
+        right: 0;
+        width: 22rem;
+        background: #fff;
+        z-index: 2;
+        visibility: hidden;
+
+        &.active {
+            visibility: visible;
+        }
+
+        ul {
+            text-align: center;
+            border-radius: 4px;
+            list-style-type: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            li {
+                border-bottom: 1px solid #bbc1c8;
+                width: 90%;
+
+                .dropdownMenuItem {
+                    display: flex;
+                    align-items: center;
+                    padding: 1rem 2rem;
+                    color: #8e8d91;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                &:hover {
+                    background-color: #f3f6f9;
+                }
+            }
+        }
+    }
+
+    .notificationNumber {
+        padding: 0.1rem 0.5rem;
+        text-align: center;
+        font-size: 0.8rem;
+        background-color: #db342e;
+        font-weight: 600;
+    }
+
+    .dropdownMenuLandingPage {
+        float: left;
+        overflow: hidden;
+
+        .btn_dropdown {
+            border: none;
+            border-radius: 0.5rem;
+            outline: none;
+            color: #b5b5c3;
+            background-color: inherit;
+            margin: 0 1rem;
+            padding: 0.3rem 1rem 0.5rem;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+        .dropdownMenuDetail {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+
+            a {
+                float: none;
+                display: block;
+                padding: 1rem 2rem;
+                color: #8e8d91;
+                text-decoration: none;
+                font-size: 1.1rem;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: #f3f6f9;
+                    color: #f48023;
+                }
+            }
+        }
+    }
+
+    .dropdownMenuLandingPage:hover {
+        .btn_dropdown {
+            background-color: #ededed;
+
+            i {
+                color: #f48023;
+            }
+        }
+
+        .dropdownMenuDetail {
+            display: block;
+        }
+    }
+
+    .SearchButton {
+        button {
+            border: none;
+            outline: none;
+            color: #b5b5c3;
+            background-color: inherit;
+            padding: 0.3rem 1rem 0.3rem;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+        :hover {
+            i {
+                color: #f48023;
+            }
+        }
+    }
+
+    .SearchPopover {
+        position: absolute;
+        top: 4.8rem;
+        left: 0.1rem;
+        min-width: calc(100vw - 6.5rem);
+    }
+    &_Avatar{
+        cursor:pointer;
+        overflow: hidden;
+        position: relative;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        height: 40px;
+        img {
+            object-fit: cover;
+            // width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+}

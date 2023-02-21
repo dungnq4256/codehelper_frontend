@@ -1,0 +1,8 @@
+.TagElement {
+    cursor: pointer;
+    background-color: #f3f6f9;
+    transition: all ease 0.3s;
+    &:hover {
+        background-color: #ccdded;
+    }
+}

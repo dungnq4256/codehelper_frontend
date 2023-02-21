@@ -1,0 +1,8 @@
+.BaseSearchBar {
+    .form-control:focus {
+        color: #3F4254;
+        background-color: #ffffff;
+        border-color: #F48023 !important;
+        outline: 0;
+    }
+}

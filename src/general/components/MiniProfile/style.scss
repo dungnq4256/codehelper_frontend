@@ -1,0 +1,90 @@
+.miniProfile {
+    box-sizing: border-box;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // padding: 30px 20px;
+    // width: 270px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+
+    &_Avatar {
+        overflow: hidden;
+        position: relative;
+        border: none;
+        aspect-ratio: 1/1;
+        width: 200px;
+        height: 200px;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+}
+
+.miniprofile-img {
+    // width: 200px;
+    // height: 200px;
+    // border-radius: 50%;
+}
+
+.miniprofile-account {
+    // height: 21px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.miniprofile-line {
+    // width: 230px;
+    height: 1px;
+    background-color: #EAEAEA;
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+
+.miniprofile-rank {
+    display: flex;
+    color: #F48023;
+    align-items: center;
+    font-weight: 400;
+    font-size: 22px;
+    // height: 18px;
+}
+
+.miniprofile-rank>a {
+    text-decoration: none;
+    color: #F48023;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.miniprofile-rank>p {
+    // height: 18px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+}
+
+.miniprofile-social>a {
+    // width: 15px;
+    // height: 15px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.miniprofile-social>a>i {
+    // width: 15px;
+    // height: 15px;
+    // padding: 12px;
+    text-align: center;
+}
